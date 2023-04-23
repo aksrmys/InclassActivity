@@ -5,7 +5,7 @@ let counter = 0;
 let level = 1;
 let timeout = 500;
 
-button.addEventListener('mouseover', () => {
+button.addEventListener('click', () => {
   counter++;
   score.textContent = `Score: ${counter}`;
   if (counter === 3) {
