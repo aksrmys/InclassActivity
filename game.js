@@ -7,7 +7,6 @@ let timeout = 500;
 
 button.addEventListener('click', () => {
   counter++;
-  score.textContent = `Score: ${counter}`;
   if (counter === 3) {
     counter = 0;
     level++;
@@ -16,7 +15,6 @@ button.addEventListener('click', () => {
     if (level > 3) {
       alert(`You won the Game`);
     }
-    score.textContent = `Level: ${level}, Score: ${counter}`;
   }
   moveButton();
 });
