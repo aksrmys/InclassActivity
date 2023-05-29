@@ -7,12 +7,12 @@ window.onload = function () {
     $("display_results").onclick = displayResults;
     $("display_scores").onclick = displayScores;
     $("add").onclick = addScore;
-    $("student_name").focus();
+    $("name").focus();
 };
 
 function addScore() {
-    var nameInput = $("student_name");
-    var scoreInput = $("student_score");
+    var nameInput = $("name");
+    var scoreInput = $("score");
     var name = nameInput.value.trim();
     var score = parseInt(scoreInput.value);
 
@@ -34,7 +34,7 @@ function addScore() {
 function displayScores() {
     var table = document.getElementById("scores_table");
     table.innerHTML = "<h2>Scores</h2><br />" +
-        "<tr><th align='left'>Student Name</th><th align='left'>Score</th></tr>";
+        "<tr><th align='left'>Name</th><th align='left'>Score</th></tr>";
 
     for (var i = 0; i < students.length; i++) {
         var row = table.insertRow();
