@@ -10,7 +10,7 @@ $(document).ready(function() {
         pause: 3000,
 		pager: true,
 		pagerType: 'short',
-        pagerCustom: '#pager'
+        pagerCustom: '#pager',
 	    captions:true
     });
 });
