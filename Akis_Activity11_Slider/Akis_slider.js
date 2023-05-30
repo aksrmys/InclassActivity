@@ -11,6 +11,6 @@ $(document).ready(function() {
 		pager: true,
 		pagerType: 'short',
         pagerCustom: '#pager'
-	    caption:true
+	    captions:true
     });
 });
